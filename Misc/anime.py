@@ -10,13 +10,27 @@ elif anime == str("No Game No Life"):
 elif anime == str("Log Horizon"):
     print "You think Sword Art Online wasn't enough."
 elif anime == str("Kantai Collection"):
-    print "Are you Ronie Corbito?"
+    sure = raw_input("Are you sure? (y/n) ")
+    if sure == str("y"):
+        print "Are you Ronnie Corbito?"
+    elif sure == str("n"):
+        print "You're Ronie Corbito, aren't you?"
+    else:
+        raise NameError("Did you use (y/n)? ")
 elif anime == str("Initial D"):
     print "You think drifting will make you a man."
-    raise Exception("dejavu.mp4 not found.")
+    raise FileNotFoundError("dejavu.mp4 not found.")
 elif anime == str("Naruto"):
     print "You're a normie."
 elif anime == str("Fullmetal Alchemist"):
     print "You're cool!"
+elif anime == str("Citrus"):
+    sure = raw_input("What's your gender? (m/f) ")
+    if sure == str("m"):
+        print "You have bad taste."
+    elif sure == str("f"):
+        print "It's okay. Nobody cares."
+    else:
+        raise NameError("Did you use (y/n)? ")
 else:
     raise NameError("This anime was not found.")
