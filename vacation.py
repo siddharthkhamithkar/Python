@@ -26,4 +26,4 @@ def plane_ride_cost(city):
 def total_trip_cost(nights, city, days):
         return hotel_cost(nights) + plane_ride_cost(city) + rental_car_cost(days)
 
-print total_trip_cost(nights, city, days) #can't use raw_input to define nights, city & cost
+print total_trip_cost(nights, city, days)
